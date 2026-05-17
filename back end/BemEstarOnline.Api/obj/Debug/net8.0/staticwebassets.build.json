@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "mtBUhYPfPYQjtiTEx3Ir4fxxx1Wnvl5G49rMsS5GS4I=",
+  "Source": "BemEstarOnline.Api",
+  "BasePath": "_content/BemEstarOnline.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
