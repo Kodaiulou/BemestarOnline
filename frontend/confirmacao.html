@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido Confirmado - Bem-Estar Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div id="app-header"></div>
+
+  <main class="container-confirmacao" aria-label="Confirmação do pedido">
+
+    <div class="confirmacao-header" role="status">
+      <span aria-hidden="true">✅</span>
+      <h2>Pedido Confirmado!</h2>
+      <p>Obrigado pela sua compra. Prepare-se para receber!</p>
+    </div>
+
+    <div class="confirmacao-corpo">
+      <!-- Detalhes do pedido injetados pelo script.js (renderizarConfirmacao) -->
+      <div id="resumo-confirmacao">
+        <!-- Conteúdo gerado via JavaScript -->
+      </div>
+
+      <a href="index.html" class="btn-confirmacao-home">
+        🏠 Voltar à Página Inicial
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="rodape-inferior">
+    <div class="bloco-texto" style="width:100%;text-align:center;">
+      <p>&copy; 2026 Farmácia Bem-Estar Online. Tecnologia a favor da vida.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmácia Bem-Estar Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <!-- Cabeçalho injetado pelo script.js (injetarCabecalho) -->
+  <div id="app-header"></div>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Destaque principal">
+    <div class="conteudo-hero">
+      <h1>Bem-Estar Online:<br>Sua Farmácia Integrada.</h1>
+      <p>Praticidade e conveniência para seus medicamentos e cuidados pessoais.<br>
+         <strong>Delivery Expresso e Assinatura Mensal.</strong></p>
+      <div class="botoes-hero">
+        <a href="delivery.html" class="btn-primario">Fazer Pedido · Delivery Expresso</a>
+        <a href="assinatura.html" class="btn-secundario">Assinar Medicamentos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDS DE SERVIÇOS -->
+  <section class="container-cards" aria-label="Nossos serviços">
+
+    <div class="card">
+      <div class="texto-card">
+        <h3>Assinatura Mensal</h3>
+        <p>Entrega automática de medicamentos de uso contínuo.</p>
+      </div>
+      <div class="imagem-card" aria-hidden="true">📅💊</div>
+    </div>
+
+    <div class="card">
+      <div class="texto-card">
+        <h3>Delivery Expresso</h3>
+        <p>Receba seus produtos no conforto da sua casa em até 2h.</p>
+      </div>
+      <div class="imagem-card" aria-hidden="true">🚚⏱️</div>
+    </div>
+
+    <div class="card">
+      <div class="texto-card">
+        <h3>Medicamentos</h3>
+        <p>Genéricos, similares e de referência.</p>
+      </div>
+      <div class="imagem-card" aria-hidden="true">💊🧴</div>
+    </div>
+
+    <div class="card">
+      <div class="texto-card">
+        <h3>Higiene e Cosméticos</h3>
+        <p>Cuidados pessoais e beleza.</p>
+      </div>
+      <div class="imagem-card" aria-hidden="true">🧴🧼</div>
+    </div>
+
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="rodape-inferior">
+    <div class="bloco-info">
+      <div class="mapa-simulado" aria-hidden="true">🗺️</div>
+      <div class="info-texto">
+        <h4>Áreas de serviço · Contato</h4>
+        <p>📞 (11) 99711-2773</p>
+        <p>✉️ info@bem-estar.com.br</p>
+      </div>
+    </div>
+
+    <div class="bloco-texto">
+      <p>O sistema integrado resolve os problemas de falta de produtos,
+         estoque, vencimento e rapidez de entrega.</p>
+    </div>
+
+    <div class="bloco-azul">
+      <div class="contatos-azul">
+        <p>📞 (11) 99711-2773</p>
+        <p>✉️ contato@bem-estar.com.br</p>
+        <div class="redes-sociais" aria-label="Redes sociais">📷 📘 📺</div>
+      </div>
+      <div class="pagamentos">
+        <p>Aceitamos pagamentos</p>
+        <div class="icones-cartao" aria-label="Bandeiras de cartão">💳 💳 💳</div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

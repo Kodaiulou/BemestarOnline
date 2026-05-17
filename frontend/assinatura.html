@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assinatura Mensal - Bem-Estar Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div id="app-header"></div>
+
+  <main class="container-formulario" aria-label="Formulário de assinatura mensal">
+
+    <h2>Configurar Assinatura Mensal 📦</h2>
+    <p>Receba seus medicamentos de uso contínuo automaticamente na frequência desejada.</p>
+
+    <form id="form-assinatura" onsubmit="finalizarAssinatura(event)" novalidate>
+
+      <div class="grupo-input">
+        <label for="nome-paciente">Nome do Paciente:</label>
+        <input type="text" id="nome-paciente" required
+               placeholder="Digite o nome completo"
+               autocomplete="name">
+      </div>
+
+      <div class="grupo-input">
+        <label for="medicamento-assinatura">Medicamento (Nome e Dosagem):</label>
+        <input type="text" id="medicamento-assinatura" required
+               placeholder="Ex: Losartana 50mg">
+      </div>
+
+      <div class="grupo-input">
+        <label for="frequencia">Frequência de Entrega:</label>
+        <!-- Estilo vindo do CSS (.grupo-input select), sem inline style -->
+        <select id="frequencia">
+          <option value="15 dias">A cada 15 dias</option>
+          <option value="30 dias" selected>A cada 30 dias</option>
+          <option value="60 dias">A cada 60 dias</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn-primario-azul">Confirmar Assinatura</button>
+
+    </form>
+
+  </main>
+
+  <footer class="rodape-inferior">
+    <div class="bloco-texto" style="width:100%;text-align:center;">
+      <p>&copy; 2026 Farmácia Bem-Estar Online. Tecnologia a favor da vida.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Medicamentos - Bem-Estar Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div id="app-header"></div>
+
+  <main class="container-catalogo">
+
+    <!-- Filtros laterais -->
+    <!-- Os checkboxes usam data-categoria para o JS filtrar os produtos do array PRODUTOS -->
+    <aside class="filtros" aria-label="Filtros de categoria">
+      <h3>Categorias</h3>
+      <ul class="lista-filtros" role="group" aria-label="Filtrar por categoria">
+        <li>
+          <label>
+            <input type="checkbox" data-categoria="genericos">
+            Medicamentos Genéricos
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-categoria="referencia">
+            Medicamentos de Referência
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-categoria="higiene">
+            Higiene Pessoal
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-categoria="dermocosmeticos">
+            Dermocosméticos
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" data-categoria="primeiros-socorros">
+            Primeiros Socorros
+          </label>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Grade de produtos: preenchida dinamicamente pelo script.js (renderizarCatalogo) -->
+    <section id="grade-produtos" class="grade-produtos" aria-label="Produtos disponíveis">
+      <!-- Produtos injetados via JavaScript -->
+    </section>
+
+  </main>
+
+  <footer class="rodape-inferior">
+    <div class="bloco-texto" style="width:100%;text-align:center;">
+      <p>&copy; 2026 Farmácia Bem-Estar Online. Tecnologia a favor da vida.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

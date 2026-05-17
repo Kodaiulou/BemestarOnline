@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Carrinho - Bem-Estar Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <div id="app-header"></div>
+
+  <main class="container-carrinho">
+
+    <!-- Lista de itens: preenchida dinamicamente pelo script.js (renderizarCarrinho) -->
+    <section class="itens-carrinho" aria-label="Itens no carrinho">
+      <h2>Meu Carrinho 🛒</h2>
+      <div id="lista-itens-carrinho">
+        <!-- Itens injetados via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Resumo do pedido: valores atualizados via JS com IDs abaixo -->
+    <aside class="resumo-pedido" id="resumo-pedido" aria-label="Resumo do pedido">
+      <h3>Resumo do Pedido</h3>
+
+      <div class="linha-resumo">
+        <span id="resumo-itens">Subtotal</span>
+        <span id="resumo-subtotal">R$ 0,00</span>
+      </div>
+
+      <div class="linha-resumo">
+        <span>Frete (Delivery Expresso)</span>
+        <span id="resumo-frete">R$ 8,00</span>
+      </div>
+
+      <div class="divisor-horizontal"></div>
+
+      <div class="linha-resumo total">
+        <span>Total</span>
+        <span id="resumo-total">R$ 0,00</span>
+      </div>
+
+      <button class="btn-primario-azul" onclick="finalizarCompra()">
+        Finalizar Compra
+      </button>
+      <a href="medicamentos.html" class="link-continuar">Continuar comprando</a>
+    </aside>
+
+  </main>
+
+  <footer class="rodape-inferior">
+    <div class="bloco-texto" style="width:100%;text-align:center;">
+      <p>&copy; 2026 Farmácia Bem-Estar Online. Tecnologia a favor da vida.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
