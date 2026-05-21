@@ -1066,3 +1066,124 @@ img { max-width:100%; display:block; }
   .stats-grid { grid-template-columns:1fr; }
   .tabs-pagamento { flex-direction:column; }
 }
+
+/* =============================================================
+   MELHORIAS DE ACESSIBILIDADE E RESPONSIVIDADE MOBILE EXTRA
+   ============================================================= */
+
+@media (max-width: 768px) {
+  /* Ajuste no Cabeçalho para Mobile */
+  .cabecalho {
+    padding: 10px 15px;
+    height: 70px;
+  }
+  
+  .logo {
+    font-size: 15px;
+  }
+
+  .icone-logo {
+    font-size: 24px;
+  }
+
+  /* Ajuste das ações do cabeçalho para não amontoar */
+  .acoes-cabecalho {
+    gap: 5px;
+  }
+
+  .usuario-logado {
+    font-size: 11px;
+  }
+
+  .btn-tema, .btn-carrinho {
+    padding: 4px;
+    font-size: 18px;
+  }
+
+  /* Melhoria no Menu Hamburguer */
+  .menu.aberto {
+    top: 70px;
+    box-shadow: var(--sombra-lg);
+  }
+
+  /* Grid de Produtos - Garantir que caibam 2 colunas em telas médias se possível */
+  .grade-produtos {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+
+  .produto-card-img {
+    height: 110px;
+    font-size: 48px;
+  }
+
+  .preco-produto {
+    font-size: 18px;
+  }
+
+  /* Itens do Carrinho - Melhorar o empilhamento */
+  .item-carrinho {
+    padding: 12px;
+  }
+
+  .controles-quantidade {
+    margin-top: 10px;
+  }
+
+  .preco-item {
+    width: 100%;
+    text-align: left;
+    margin-top: 8px;
+    border-top: 1px solid var(--cor-borda);
+    padding-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Tipografia Mobile */
+  body {
+    font-size: 14px;
+  }
+
+  .conteudo-hero h1 {
+    font-size: 22px;
+  }
+
+  /* Grid de Produtos - 1 coluna em telas muito pequenas para melhor leitura */
+  .grade-produtos {
+    grid-template-columns: 1fr;
+  }
+
+  /* Botões maiores para facilitar o toque (Tap Targets) */
+  .btn-primario, .btn-secundario, .btn-add-produto, .btn-confirmar {
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  /* Inputs maiores para mobile */
+  .grupo-input input, .grupo-input select, .grupo-input textarea {
+    padding: 14px;
+    font-size: 16px; /* Evita zoom automático no iOS */
+  }
+
+  /* Ajuste do Modal */
+  .modal {
+    padding: 20px;
+    width: 95%;
+  }
+
+  /* Ajuste do Rodapé */
+  .rodape-inferior {
+    padding: 20px 4%;
+  }
+
+  .bloco-azul {
+    padding: 15px;
+  }
+
+  .redes-sociais {
+    font-size: 24px;
+    letter-spacing: 15px;
+  }
+}
